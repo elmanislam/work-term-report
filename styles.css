@@ -3,6 +3,8 @@ body {
   margin: 0;
   min-height: 100vh;
 
+  background: #111;
+
 
 
 }
@@ -81,10 +83,18 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
 
+  padding-left: 20px;
   padding-bottom: 25px;
 
+}
+
+
+#office {
+  height: 400px;
+  max-width: 700px;
+  flex: 1 1 auto;
+  
 }
 
 /* misc. elements */
@@ -100,6 +110,12 @@ h1 {
 
 }
 
+h2 {
+  font-weight: 800;
+  margin: 0 auto;
+
+
+}
 
 .scroller {
 
