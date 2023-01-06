@@ -95,19 +95,26 @@ body {
 
 }
 
-.textBox {
+#sonovaLogo {
+  padding-left: 20px;
+  padding-top: 20px;
+  max-width: 400px;
+
+}
+
+#intro .textBox {
   max-width: 60%;
   margin-right: 20px;
 }
 
- .introImage {
+ #intro .imagePanel {
   flex: 1 1 auto;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-#office {
+#intro .imagePanel #office {
   height: 350px;
   max-width: 90%;
 
@@ -145,9 +152,9 @@ p {
 
 }
 
-.introImage p {
+.imagePanel p {
   color: rgb(170, 158, 158);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .scroller {
