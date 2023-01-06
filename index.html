@@ -6,43 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  
+  <script src="javascript.js" defer></script>
+
   <title>Elman's Work Term Report</title>
 </head>
 <body class="scroller">
-  <script src="javascript.js"></script>
 
-    <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="#">Introduction</a>
-      <a href="#">My Employers</a>
-      <a href="#">Goals</a>
-      <a href="#">Job Description</a>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#intro">Introduction</a>
+    <a href="#">My Employers</a>
+    <a href="#">Goals</a>
+    <a href="#">Job Description</a>
+  </div>
+
+  <div id="main">
+    <div class="header">
+      <button class="openbtn" onclick="viewNav()">☰ </button> 
+      Elman Islam - Work Term Report
     </div>
+    <div class="titleBox">
+      <h1> My Wonderful Experience at Sonova</h1>   
 
-    <div id="main">
-      <div class="header">
-        <button class="openbtn" onclick="viewNav()">☰ </button> 
-        Elman Islam - Work Term Report
-
+    </div>
+    <div id="intro" >
+      <div class="textBox">
+        <br>
+        <h2>Introduction</h2>
+        <hr>
+        <p>Welcome to my Work Term Report. This page outlines my experience working at Sonova as a
+          <strong>Software Quality Assurance Analyst</strong>, from <i>September 9, 2022 - December 24, 2022.</i>
+        </p>
+        <p>During my experience at Sonova, I learned a lot about quality assurance, specifically testing software.
+          The products Sonova sells are super high-tech hearing instruments, and my job was to make sure the software
+          for these devices was functioning properly.
+        </i>
+        </p>
+      </div>
+      <div class="introImage">
+        <img id="office" src="img/sonova-office.png" alt="woman walking towards the Sonova Kitchener office building">
+        <p> <i>20 Beasley Drive, Kitchener, Ontario</i>, The office building where I worked at</p>
       </div>
       
-      <div id="intro">
-        <div class="text-box">
-          <h1> My Wonderful Experience at Sonova</h1>
-          <h2> <i>Software Quality Assurance Analyst (Co-op)</i>
-            <br><br>Sep 9 - Dec 24, 2022</h2>
-          <p>A little website built by Elman to help you keep track of what you have read. Browse millions
-            of books and start recording now!
-          </p>
-          <img id="office" src="img/sonova-office.png" alt="woman walking towards the Sonova Kitchener office building">
+
     </div>
-        </div>
-      </div>
+  </div>
+   
 
 
-      </div>
-    </div>
+
+
 
 </body>
 </html>
