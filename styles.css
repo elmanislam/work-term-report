@@ -74,15 +74,13 @@ body {
   padding: 16px;
 }
 
- #intro {
+ #intro, #jobDescription {
   background-color: #1F2937;
   color: white;
 
   display: flex;
 
-  padding-left: 25px;
-  padding-bottom: 25px;
-  padding-right: 25px;
+  padding: 0 25px 25px 25px;
 
 }
 
@@ -102,23 +100,32 @@ body {
 
 }
 
-#intro .textBox {
+.textBox {
   max-width: 60%;
   margin-right: 20px;
 }
 
- #intro .imagePanel {
+  .imagePanel {
   flex: 1 1 auto;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center; 
+}
 
+#jobDescription .imagePanel {
+  padding-top: 10px;
+}
 #intro .imagePanel #office {
   height: 350px;
   max-width: 90%;
 
   
+}
+
+#hearingAids {
+  height: 350px;
+  max-width: 100%;
 }
 
 /* misc. elements */
@@ -127,6 +134,12 @@ p {
   line-height: 1.5;
 }
 
+#office, #hearingAids {
+  border: 5px solid #555;
+}
+img {
+  padding: 5px;
+}
 
 h1 {
   text-transform: uppercase;
