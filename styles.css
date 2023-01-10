@@ -41,7 +41,7 @@ body {
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .sidebar a:hover {
@@ -63,10 +63,14 @@ body {
   color: white;
   padding: 10px 15px;
   border: none;
+  transition: .5s;
 }
 
 .openbtn:hover {
   background-color: #444;
+
+  border-radius: 75px;
+
 }
 
 #main {
@@ -76,22 +80,27 @@ body {
 }
 
 
- #intro, #goals, #jobDescription {
+ #intro, #goals, #jobDescription, #acknowledgements {
   background-color: #1F2937;
   color: white;
 
   display: flex;
+  flex-wrap: wrap;
 
 
-  padding: 0 25px 25px 50px;
+  padding: 0 50px 25px 50px;
 
+}
+
+#jobDescription {
+  padding-left: 10px;
 }
 
 #goals {
   margin-top: -30px;
 }
 
-.whitespace, .titleBox {
+.titleBox {
   background-color: #1F2937;
   color: white;
 
@@ -100,11 +109,10 @@ body {
 
 }
 
-.whitespace {
-  flex: 1 2 auto;
-  min-width: 0px;
-  max-width: 10%;
+#jobDescription .textBox {
+  margin-left: 20px;
 }
+
 #sonovaLogo {
   padding-left: 20px;
   padding-top: 20px;
@@ -113,23 +121,30 @@ body {
 }
 
 .textBox {
-  max-width: 60%;
-  margin-right: 20px;
+  flex: 1 2 700px;
+  max-width: 100%;
+
 }
 
-#goals .textBox {
-  max-width: 100%;
-}
-  .imagePanel {
-  flex: 1 1 auto;
+
+.imagePanel {
+  flex: 1 1 700px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center; 
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
 #jobDescription .imagePanel {
   padding-top: 10px;
+  flex: 1 1 350px;
+
 }
 #intro .imagePanel #office {
   height: 350px;
@@ -192,7 +207,9 @@ h2 {
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
 @media screen and (max-height: 450px) {
+  
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
