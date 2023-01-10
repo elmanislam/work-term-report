@@ -92,9 +92,7 @@ body {
 
 }
 
-#jobDescription {
-  padding-left: 10px;
-}
+
 
 #goals {
   margin-top: -30px;
@@ -109,8 +107,11 @@ body {
 
 }
 
+#jobDescription .imagePanel{
+  margin-left: -20px;
+}
 #jobDescription .textBox {
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 #sonovaLogo {
