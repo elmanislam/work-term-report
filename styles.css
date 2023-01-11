@@ -80,7 +80,7 @@ body {
 }
 
 
- #intro, #goals, #jobDescription, #acknowledgements {
+ #intro, #company, #goals, #jobDescription, #conclusion, #acknowledgements {
   background-color: #1F2937;
   color: white;
 
@@ -112,8 +112,9 @@ body {
   margin-left: -20px;
 }
 #jobDescription .textBox {
-  margin-left: 50px;
+  margin-left: 40px;
 }
+
 
 #sonovaLogo {
   padding-left: 20px;
@@ -149,6 +150,13 @@ body {
   flex: 1 1 350px;
 
 }
+
+#jobDescription .textBox {
+    flex: 1 2 1000px;
+
+  
+  
+}
 #intro .imagePanel #office {
   height: 350px;
   max-width: 90%;
@@ -175,7 +183,12 @@ p {
 
 #diagram {
   background-color: white;
+
+
   border-radius: 100px;
+  margin-left: 30px;
+  margin-right: -20px;
+
 }
 
 img {
